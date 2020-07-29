@@ -1,9 +1,9 @@
 # Binary Firmware Generation Tool (fwgen)
 
 Even though this toolset has been created primarily for microchip usb26x USB-hub
-firmware generation it can be used ti creat nearly any binary blob. The core
+firmware generation it can be used to create nearly any binary blob. The core
 shell-script '/etc/fwgen/core.sh' is created just to execute the firmware
-genetion scripts placed in the root firmware directory '/etc/fwgen/fw'. Each
+generation scripts placed in the root firmware directory '/etc/fwgen/fw'. Each
 firmware script can be created with a help of functions described in
 '/etc/fwgen/functions.sh'. It's strongly recommended to use a POSIX-shell
 language for the firmware and library scripts so to have a portable program.
@@ -35,5 +35,5 @@ As you can see there is one mandatory argument. It's a firmware name. The progra
 is looking for the corresponding script in the '/etc/fwgen/fw' directory and
 executes one if it's found. By default the output data is redirected to the stdout
 if no file is specified ('-o' argument is omitted). A firmware layout info is
-outputed if '-l' argument is passed to the utility. The last option is useful for
+produced if '-l' argument is passed to the utility. The last option is useful for
 debugging.
